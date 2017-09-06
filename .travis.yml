@@ -32,12 +32,13 @@
          - "~/.platformio"
 
  env:
-     - PLATFORMIO_CI_SRC=/Users/cassini/Desktop/TF/Blogposts/PIO_Remote/unit-testing-with-platformio-blogpost3/src/main.cpp
+     - PLATFORMIO_CI_SRC=/src/main.cpp
 
  install:
      - pip install -U platformio
 
  script:
-     - pio remote -a rpi1 run -t upload -e nodemcuv2
-     - pio remote -a rpi1 test -e nodemcuv2
+     - pio ci --board=nodemcuv2 --lib="." 
+#    - pio remote -a rpi1 run -t upload -e nodemcuv2
+#    - pio remote -a rpi1 test -e nodemcuv2
 

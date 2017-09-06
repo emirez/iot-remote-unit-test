@@ -38,4 +38,4 @@
      - pip install -U platformio
 
  script:
-     - platformio ci --lib="." --board=rpi1
+     - platformio ci --lib="." --board=nodemcuv2

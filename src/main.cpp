@@ -1,4 +1,3 @@
-// H
 #ifndef UNIT_TEST
 #ifdef ARDUINO
 

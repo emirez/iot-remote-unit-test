@@ -32,8 +32,7 @@
          - "~/.platformio"
 
  env:
-     - PLATFORMIO_CI_SRC=src/main.cpp
-     - PLATFORMIO_CI_SRC=/test
+     - PLATFORMIO_CI_SRC=/Users/cassini/Desktop/TF/Blogposts/PIO_Remote/unit-testing-with-platformio-blogpost3
 
  install:
      - pip install -U platformio
